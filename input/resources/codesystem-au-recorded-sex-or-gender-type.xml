@@ -1,0 +1,141 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="au-recorded-sex-or-gender-type" />
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="0"/>
+	</extension>
+	<url value="http://terminology.hl7.org.au/CodeSystem/au-recorded-sex-or-gender-type" />
+	<identifier> 
+		<system value="urn:ietf:rfc:3986"/> 
+		<value value="urn:oid:2.16.xxxxxx-add-oid-from-hl7-au-here"/> 
+	</identifier>
+	<name value="AURecordedSexOrGenderType" />
+	<title value="AU Recorded Sex or Gender Type" />
+	<status value="active" />
+	<experimental value="false"/>
+	<description value="Codes that represent the type of the recorded sex and gender in an Australian context." />
+	<caseSensitive value="true" />
+	<hierarchyMeaning value="is-a"/>
+	<valueSet value="http://terminology.hl7.org.au/ValueSet/recorded-sex-and-gender-type"/>
+	<compositional value="false" />
+	<versionNeeded value="false" />
+	<content value="complete" />	
+	<concept>
+      <code value="passport"/>
+	  <display value="Passport"/>
+      <definition value="A passport issued by a country"/>
+      <concept>
+        <code value="au-passport"/>
+		<display value="Australian Passport"/>
+        <definition value="A passport issued by the Australian Government"/>
+      </concept>     
+    </concept>
+    <concept>
+        <code value="birth-certificate"/>
+		<display value="Birth Certificate"/>
+      	<definition value="A birth certificate issued by a jurisdiction"/>
+		<property>
+     	  <code value="notSelectable"/>
+    	  <valueBoolean value="true"/>
+   	    </property>
+           <concept>
+				<code value="qld-birth-certificate"/>
+				<display value="Queensland Birth Certificate"/>
+				<definition value="A birth certificate issued by the Queensland Government"/>
+			</concept>
+			<concept>
+				<code value="nsw-birth-certificate"/>
+				<display value="New South Wales Birth Certificate"/>
+				<definition value="A birth certificate issued by the New South Wales Government"/>
+			</concept>
+			<concept>
+				<code value="vic-birth-certificate"/>
+				<display value="Victorian Birth Certificate"/>
+				<definition value="A birth certificate issued by the Victorian Government"/>
+			</concept>
+			<concept>
+				<code value="act-birth-certificate"/>
+				<display value="Australian Capital Territory Birth Certificate"/>
+				<definition value="A birth certificate issued by the Australian Capital Territory Government"/>
+			</concept>
+			<concept>
+				<code value="sa-birth-certificate"/>
+				<display value="South Australian Birth Certificate"/>
+				<definition value="A birth certificate issued by the South Australian Government"/>
+			</concept>
+			<concept>
+				<code value="tas-birth-certificate"/>
+				<display value="Tasmanian Birth Certificate"/>
+				<definition value="A birth certificate issued by the Tasmanian Government"/>
+			</concept>
+			<concept>
+				<code value="wa-birth-certificate"/>
+				<display value="Western Australian Birth Certificate"/>
+				<definition value="A birth certificate issued by the Western Australian Government"/>
+			</concept>
+			<concept>
+				<code value="nt-birth-certificate"/>
+				<display value="Northern Territory Birth Certificate"/>
+				<definition value="A birth certificate issued by the Northern Territory Government"/>
+			</concept>
+    </concept>
+	<concept>
+		<code value="insurance-scheme"/>
+		<display value="Insurance Scheme"/>
+		<definition value="Enrolment in an insurance scheme."/>
+		<property>
+          <code value="notSelectable"/>
+          <valueBoolean value="true"/>
+        </property>
+		<concept>
+			<code value="au-medicare"/>
+			<display value="Australian Medicare"/>
+			<definition value="Enrolment in the Australian Medicare universal healthcare insurance scheme"/>
+		</concept>		
+	</concept>
+	<concept>
+		<code value="registration-and-accreditation-scheme"/>
+		<display value="Registration and accreditation scheme"/>
+		<definition value="Registration in a registration and accreditation scheme"/>
+		<property>
+          <code value="notSelectable"/>
+          <valueBoolean value="true"/>
+        </property>
+		<concept>
+			<code value="au-ahpra"/>
+			<display value="Australian Health Practitioner Regulation Agency"/>
+			<definition value="Registration in the Australian Health Practitioner Regulation Agency (AHPRA)"/>
+		</concept>		
+	</concept>
+	<concept>
+		<code value="digital-health-infrastructure-service"/>
+		<display value="Digital Health Infrastructure Service"/>
+		<definition value="A digital health infrastructure service"/>
+		<property>
+          <code value="notSelectable"/>
+          <valueBoolean value="true"/>
+        </property>
+		<concept>
+			<code value="au-hi-service"/>
+			<display value="Australian Healthcare Identifiers Service"/>
+			<definition value="Registration in the Australian Healthcare Identifiers (HI) Service"/>
+		</concept>
+		<concept>
+			<code value="au-my-health-record"/>
+			<display value="Australian My Health Record System"/>
+			<definition value="Registration in the Australian My Health Record System"/>
+		</concept>
+		<concept>
+			<code value="au-pca"/>
+			<display value="Australian Provider Connect Australia System"/>
+			<definition value="Registration in the Australian Provider Connect Australia (PCA) System"/>
+		</concept>
+		<concept>
+			<code value="au-nhsd"/>
+			<display value="Australian National Health Services Directory"/>
+			<definition value="Registration in the Australian National Health Services Directory (NHSD)"/>
+		</concept>			
+	</concept>
+</CodeSystem>

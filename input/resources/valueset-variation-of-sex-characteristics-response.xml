@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="variation-of-sex-characteristics-response"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="0"/>
+	</extension>
+	<url value="http://terminology.hl7.org.au/ValueSet/variation-of-sex-characteristics-response"/>
+	<identifier> 
+		<system value="urn:ietf:rfc:3986"/> 
+		<value value="urn:oid:2.16.hl7-oid-goes-here"/> 
+	</identifier> 
+	<name value="VariationOfCharacteristicsResponse"/>
+	<title value="Variation of Sex Characteristics Response"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<description value="This value set includes codes that may be used to represent a person's knowledge of whether the they have a variation of a sex characteristics."/>
+	<compose>
+		<include> 
+			<system value="http://terminology.hl7.org.au/CodeSystem/variation-of-sex-characteristics"/>			
+		</include> 
+		<include>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+            <concept>
+                <code value="asked-declined"/>
+            </concept>
+            <concept>
+                <code value="asked-unknown"/>
+            </concept>
+            <concept>
+                <code value="not-asked"/>
+            </concept>
+            <concept>
+                <code value="unknown"/>
+			</concept>
+		</include>	
+	</compose> 
+</ValueSet>
