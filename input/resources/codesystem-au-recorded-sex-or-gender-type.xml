@@ -26,6 +26,10 @@
       <code value="passport"/>
 	  <display value="Passport"/>
       <definition value="A passport issued by a country"/>
+	  <property>
+     	 <code value="notSelectable"/>
+    	 <valueBoolean value="true"/>
+   	  </property>
       <concept>
         <code value="au-passport"/>
 		<display value="Australian Passport"/>
